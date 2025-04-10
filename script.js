@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
   
-      // Verifica se apenas uma trilha foi marcada
+      
       const checkboxes = document.querySelectorAll(".input-checkbox");
       const selecionadas = Array.from(checkboxes).filter((cb) => cb.checked);
       if (selecionadas.length !== 1) {
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
   
-      // Armazena a trilha escolhida
+      
       const trilhas = document.querySelectorAll(".input-checkbox");
       trilhas.forEach((checkbox, index) => {
         if (checkbox.checked) {
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
   
-      // Salva no localStorage
+      
       localStorage.setItem("dadosInscricao", JSON.stringify(dados));
     }
   
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
           salvarDados();
           alert("✅ Inscrição realizada com sucesso!");
           form.reset();
-          window.location.href = "login.html"; // 👈 Redireciona após o reset do formulário
+          window.location.href = "login.html"; 
         }
       });
 

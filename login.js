@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("form-login");
-    const emailInput = document.getElementById("email-login"); // 👈 Corrigido
-    const senhaInput = document.getElementById("senha-login"); // 👈 Corrigido
+    const emailInput = document.getElementById("email-login"); 
+    const senhaInput = document.getElementById("senha-login"); 
   
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
       if (usuario.email === emailDigitado && usuario.senha === senhaDigitada) {
         alert("✅ Login realizado com sucesso!");
-        // window.location.href = "dashboard.html"; // Se quiser redirecionar depois
+    
       } else {
         alert("❌ E-mail ou senha incorretos.");
       }
